@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="container my-5">
+        <h1 class="text-center mb-4">Todo App</h1>
+        <div class="row mb-3">
+            <div class="col-9">
+                <input type="text" id="task" class="form-control" placeholder="Enter a task" />
+            </div>
+            <div class="col-3">
+                <button id="addTodo" class="btn btn-primary w-100">Add Todo</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Your Tasks</h5>
+            </div>
+            <div class="card-body p-0">
+                <ul id="todoList" class="list-group list-group-flush"></ul>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
